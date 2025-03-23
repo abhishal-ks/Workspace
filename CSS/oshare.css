@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(217, 232, 246);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* <!-- PROMOTIONAL --> */
+
+header {
+    margin: 50px 0;
+}
+
+header > img {
+    width: 250px;
+}
+
+.map {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.responsive-iframe {
+    align-items: center;
+    width: 80vw;
+    height: 180px;
+}
+
+.tagline {
+    font-size: 17px;
+}
+
+.promotion {
+    /* background-color: yellow; */
+    background-image: url("../img/fashion.jpg");
+    object-fit: contain;
+    object-position: center center;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    width: 95vw;
+    height: 95vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+.promotion img {
+    object-fit: contain;
+}
+
+.features img {
+    width: 65px;
+    
+}
+
+.features {
+    width: 80vw;
+    justify-content: center;
+    gap: 40px;
+}
+
+.features * {
+    width: 20vw;
+}
+
+.fast {
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.1) inset,
+    -2px -2px 10px white inset;
+}
+.return {
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.1) inset,
+    -2px -2px 10px white inset;
+}
+.hyperlocal {
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.1) inset,
+    -2px -2px 10px white inset;
+}
+
+.feature-head {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.feature-detail {
+    font-size: 14px;
+}
+
+
+/* <!-- MAIN SECTIONS --> */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section-box {
+    width: 380px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.section-box h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.apparel {
+    background-color: red;
+}
+
+.medicine {
+    background-color: blue;
+}
+
+.dairy {
+    background-color: blanchedalmond;
+}
+
+
+/* <!-- OTHER SECTIONS --> */
+
+section {
+    margin: 50px;
+}
+
+.products {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: hidden;
+    gap: 18px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.products * {
+    min-width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px -12px black;
+}
+
+
+/* <!-- NAV BAR --> */
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    background-color: white;
+    border-radius: 48px;
+    width: 60vw;
+    justify-content: center;
+    gap: 200px;
+    position: fixed;
+    bottom: 10px;
+    box-shadow: 5px 5px 10px -5px black;
+}
+
+nav ul {
+    display: flex;
+    gap: 110px;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    background-color: rgb(217, 232, 246);
+    padding: 10px;
+    border-radius: 28px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.page-last {
+    color: white;
+    background-color: rgb(34 30 30);
+    width: 100%;
+    height: 45vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contacts p {
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .promotion{
+        height: 30vh;
+        background-size: 450px;
+    }
+
+    .responsive-iframe {
+        height: 170px;
+    }
+
+    .features {
+        gap: 10px;
+    }
+
+    .features * {
+        width: 28vw;
+    }
+
+    .features img {
+        width: 45px;
+    }
+
+    .feature-head {
+        font-size: 0.8em;
+    }
+    
+    .feature-detail {
+        font-size: 0.8em;
+    }
+
+
+    /* <!-- MAIN SECTIONS --> */
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .section-box {
+        width: 70vw;
+        height: 30vh;
+    }
+
+
+    /* OTHER SECTIONS */
+    section{
+        margin: 50px 0;
+    }
+    
+    .products * {
+        min-width: 150px;
+        height: 150px;
+    }
+
+    .fourth {
+        margin: 0;
+    }
+
+
+    /* Nav Bar */
+    nav {
+        width: 95vw;
+    }
+
+    nav ul {
+        gap: 4px;
+    }
+
+    .page-last {
+        flex-direction: column;
+        padding: 15px;
+    }
+}

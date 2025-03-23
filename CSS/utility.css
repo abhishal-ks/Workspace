@@ -1,0 +1,55 @@
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.content-center {
+    justify-content: center;
+}
+
+.border {
+    border: 2px solid black;
+}
+
+.m-1 {
+    margin: 22px;
+}
+
+.m-2 {
+    margin: 35px;
+}
+
+.p-1 {
+    padding: 10px;
+}
+
+.p-2 {
+    padding: 20px;
+}
+
+.rounded {
+    border-radius: 8px;
+}
+
+.box-shadow {
+    box-shadow: 5px 5px 10px -5px black;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.gap {
+    gap: 25px;
+}
